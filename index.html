@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkMachines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TalkMachines</h1>
+        
+        <h2>Structure</h2>
+        
+        <h3>Control + Perception</h3>
+        <p>This module is responsible for executing commands based on the input received. It is subdivided into the following components:</p>
+        <ul>
+            <li><strong>say_move:</strong></li>
+            <ul>
+                <li><strong>say_move:</strong> Utilizes the OpenAI API for general command execution.</li>
+                <li><strong>say_move_copilot:</strong> Uses the Sydney Copilot API for specialized command handling.</li>
+                <li><strong>say_move_copilot_v2:</strong> An enhanced version of the Sydney Copilot API integration.</li>
+            </ul>
+        </ul>
+        
+        <h3>Perception (Visual + Sensor Data)</h3>
+        <p>This module processes visual and sensor data to understand the environment and inform decision-making.</p>
+        <ul>
+            <li><strong>verbal_states:</strong></li>
+            <ul>
+                <li><strong>say_move_copilot_verbal_states:</strong> Integrates verbal state data with the Sydney Copilot API.</li>
+            </ul>
+        </ul>
+    </div>
+</body>
+</html>
