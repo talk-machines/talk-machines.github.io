@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TalkWithMachines: Enhancing Human-Robot Interaction</title>
-  <link rel="icon" type="image/png" href="assets/demo_icon.SVG">
+  <link rel="icon" type="image/svg+xml" href="assets/demo_icon.svg">
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
+      color: #333;
       margin: 0;
       padding: 0;
-      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1, h3 {
+      text-align: center;
     }
     h1 {
       font-size: 2.5em;
@@ -24,7 +29,15 @@
     .authors {
       font-size: 1em;
       color: #777;
+      text-align: center;
       margin: 20px 0;
+    }
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      text-align: left;
     }
     .icons {
       display: flex;
@@ -34,6 +47,7 @@
     }
     .icon-item {
       text-align: center;
+      font-size: 0.9em;
     }
     .icon-item img {
       width: 60px;
@@ -44,26 +58,21 @@
     }
     .icon-item p {
       margin-top: 5px;
-      font-size: 0.9em;
       color: #0066cc; /* Blue color */
       text-decoration: underline;
     }
-    .content {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      line-height: 1.6;
+    .footer {
+      margin-top: 40px;
+      text-align: center;
     }
     .footer img {
       width: 80px;
       margin: 15px;
     }
-    .footer {
-      margin-top: 40px;
-    }
     .disclaimer {
       font-size: 0.8em;
       color: #999;
+      text-align: center;
       margin-top: 40px;
     }
   </style>
@@ -82,15 +91,15 @@
 
   <section class="icons">
     <div class="icon-item">
-      <a href="assets/paper.pdf"><img src="assets/paper_icon.png" alt="Paper" title="Paper"></a>
+      <a href="assets/paper.pdf"><img src="assets/paper_icon.svg" alt="Paper" title="Paper"></a>
       <p>Paper</p>
     </div>
     <div class="icon-item">
-      <a href="https://github.com/talk-machines/talk_machines"><img src="assets/github_icon.png" alt="Code" title="Code"></a>
+      <a href="https://github.com/talk-machines/talk_machines"><img src="assets/github_icon.svg" alt="Code" title="Code"></a>
       <p>Code</p>
     </div>
     <div class="icon-item">
-      <a href="assets/demo.gif"><image src="assets/demo_icon.png" alt="Demo" title="Demo"></a>
+      <a href="assets/demo.gif"><img src="assets/demo_icon.svg" alt="Demo" title="Demo"></a>
       <p>Demo</p>
     </div>
   </section>
@@ -101,7 +110,7 @@
 
     <h2>Methodology</h2>
     <p><strong>Framework Overview:</strong></p>
-    <img src="assets/framework.SVG" alt="Framework Diagram" width="80%">
+    <img src="assets/framework.svg" alt="Framework Diagram" width="80%">
     <ul>
       <li><strong>Language Processing:</strong> Using LLMs to translate natural language commands to robotic actions.</li>
       <li><strong>Perception and Control:</strong> Integrating VLMs for enhanced object detection and task execution.</li>
