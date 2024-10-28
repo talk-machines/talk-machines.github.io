@@ -31,6 +31,16 @@
       color: #777;
       text-align: center;
       margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .header-gif {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 20px;
     }
     .content {
       max-width: 800px;
@@ -95,12 +105,16 @@
 <body>
 
   <header>
+    <div class="center-content">
+      <img src="assets/demo_animation.gif" alt="Introduction GIF" class="header-gif">
+    </div>
     <h1>TalkWithMachines</h1>
     <h3>Enhancing Human-Robot Interaction Through Large/Vision Language Models</h3>
     <p class="authors">
-      <em>Ammar N. Abbas, Csaba Beleznai</em><br>
-      Technological University Dublin, AIT Austrian Institute of Technology<br>
-      <a href="mailto:ammar.abbas@tudublin.ie">ammar.abbas@tudublin.ie</a>, <a href="mailto:csaba.beleznai@ait.ac.at">csaba.beleznai@ait.ac.at</a>
+      <em>Ammar N. Abbas, Csaba Beleznai</em>
+      <span>Technological University Dublin, AIT Austrian Institute of Technology</span>
+      <a href="mailto:ammar.abbas@tudublin.ie">ammar.abbas@tudublin.ie</a>,
+      <a href="mailto:csaba.beleznai@ait.ac.at">csaba.beleznai@ait.ac.at</a>
     </p>
   </header>
 
