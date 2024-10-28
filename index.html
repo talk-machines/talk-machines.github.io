@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TalkWithMachines: Enhancing Human-Robot Interaction</title>
-  <link rel="icon" type="image/svg+xml" href="assets/demo_icon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/demo_icon.svg">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -39,17 +39,30 @@
       line-height: 1.6;
       text-align: left;
     }
-    .icons {
+    .center-content {
       display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin: 20px 0;
-    }
-    .icon-item {
-      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 8px;
-      font-size: 0.9em;
+    }
+    .center-content img {
+      width: 80%;
+    }
+    .center-content a {
+      text-align: center;
+      display: block;
+      color: #0066cc;
+      text-decoration: underline;
+      font-size: 1em;
+      margin: 10px 0;
+    }
+    .icons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      width: 100%;
+      max-width: 500px;
+      margin: 20px 0;
+      text-align: center;
     }
     .icon-item img {
       width: 60px;
@@ -59,9 +72,9 @@
       transform: scale(1.1);
     }
     .icon-item p {
-      color: #0066cc; /* Blue color */
+      color: #0066cc;
       text-decoration: underline;
-      margin: 0;
+      margin-top: 5px;
     }
     .footer {
       margin-top: 40px;
@@ -93,15 +106,15 @@
 
   <section class="icons">
     <div class="icon-item">
-      <a href="assets/paper.pdf"><img src="assets/paper_icon.png" alt="Paper" title="Paper"></a>
+      <a href="assets/paper.pdf"><img src="assets/paper_icon.svg" alt="Paper" title="Paper"></a>
       <p>Paper</p>
     </div>
     <div class="icon-item">
-      <a href="https://github.com/talk-machines/talk_machines"><img src="assets/github_icon.png" alt="Code" title="Code"></a>
+      <a href="https://github.com/talk-machines/talk_machines"><img src="assets/github_icon.svg" alt="Code" title="Code"></a>
       <p>Code</p>
     </div>
     <div class="icon-item">
-      <a href="assets/demo.gif"><img src="assets/demo_icon.png" alt="Demo" title="Demo"></a>
+      <a href="assets/demo.gif"><img src="assets/demo_icon.svg" alt="Demo" title="Demo"></a>
       <p>Demo</p>
     </div>
   </section>
@@ -111,8 +124,10 @@
     <p>This project investigates how Large Language Models (LLMs) and Vision Language Models (VLMs) can enhance robotic control, perception, and situational awareness in human-robot interaction.</p>
 
     <h2>Methodology</h2>
-    <p><strong>Framework Overview:</strong></p>
-    <img src="assets/framework.svg" alt="Framework Diagram" width="80%">
+    <div class="center-content">
+      <p><strong>Framework Overview:</strong></p>
+      <img src="assets/framework.svg" alt="Framework Diagram">
+    </div>
     <ul>
       <li><strong>Language Processing:</strong> Using LLMs to translate natural language commands to robotic actions.</li>
       <li><strong>Perception and Control:</strong> Integrating VLMs for enhanced object detection and task execution.</li>
@@ -124,13 +139,15 @@
     <p><strong>Result:</strong> High success rate with low error in task execution.</p>
 
     <h3>Supplementary Materials</h3>
-    <p><a href="assets/appendix.pdf">Appendix</a></p>
+    <div class="center-content">
+      <a href="assets/appendix.pdf">Appendix</a>
+    </div>
   </section>
 
   <footer class="footer">
     <p>Affiliations</p>
     <a href="https://www.tudublin.ie/"><img src="assets/tudublin_logo.png" alt="TU Dublin"></a>
-    <a href="https://www.ait.ac.at/"><img src="assets/ait_logo.jpg" alt="AIT Austrian Institute of Technology"></a>
+    <a href="https://www.ait.ac.at/"><img src="assets/ait_logo.png" alt="AIT Austrian Institute of Technology"></a>
   </footer>
   
 </body>
